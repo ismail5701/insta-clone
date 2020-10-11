@@ -1,0 +1,28 @@
+<mat-toolbar style="justify-content: space-between;">
+  <div>
+    <img width="40" alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==" />
+    <span>Welcome - Instagram Clone</span>
+  </div>
+  <div>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle (click) = "likeDesc()">Like<mat-icon>keyboard_arrow_down</mat-icon></mat-button-toggle>
+      <mat-button-toggle (click) = "likeAsc()">Like<mat-icon>keyboard_arrow_up</mat-icon></mat-button-toggle>
+      <mat-button-toggle (click) = "DateDesc()">Date<mat-icon>keyboard_arrow_down</mat-icon></mat-button-toggle>
+      <mat-button-toggle (click) = "DateAsc()">Date<mat-icon>keyboard_arrow_down</mat-icon></mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</mat-toolbar>
+
+<div class="container">
+  <mat-card *ngFor="let item of data" class="card">
+    <mat-card-header>
+      <mat-card-subtitle> Created : {{item.timestamp}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src='{{item.Image}}' alt="instagram photo">
+    <mat-card-footer>
+      <mat-icon svgIcon="like" style="width: 50px; height:50px" matBadge="{{item.likes}}" matBadgeColor="warn">
+      </mat-icon>
+    </mat-card-footer>
+  </mat-card>
+</div>
