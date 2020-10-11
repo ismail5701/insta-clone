@@ -23,7 +23,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 -    Display Images as Cards.
 -    A feature to Sort by Time and Likes.
 
-##Screenshots
+## Screenshots
 
 ![enter image description here][1]{:target='_blank'}
 
