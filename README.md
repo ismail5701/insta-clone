@@ -10,7 +10,7 @@ https://github.com/ismail5701/insta-clone
 
 ## Running locally on Development server
 
-Clone the project from https://github.com/ismail5701/insta-clone 
+Clone the project from https://github.com/ismail5701/insta-clone   
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
 
 ## Build
