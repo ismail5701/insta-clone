@@ -6,11 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Repository
 
-https://github.com/ismail5701/tweet-streamer.git
-
-## Stackblitz
-
-https://stackblitz.com/edit/angular-ivy-ctyxy2
+https://github.com/ismail5701/insta-clone
 
 ## Running locally on Development server
 
